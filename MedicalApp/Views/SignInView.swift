@@ -9,50 +9,52 @@ import SwiftUI
 
 struct SignInView: View {
     var body: some View {
-
-        VStack(spacing:2){
-            HStack(){
-                
-                Image("Earth")
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                
-                
-                VStack(alignment: .leading) {
-                    Text("Texas Health")
-                        .font(.largeTitle)
-                        .foregroundColor(Color(red: 0,
-                                               green:0 ,
-                                               blue: 0.5))
-                        .bold()
-                    Text("Resource")
-                        .font(.title)
-                        .foregroundColor(Color(red: 0,
-                                               green:0 ,
-                                               blue: 0.5))
+     
+            VStack(spacing:2){
+                HStack(){
                     
-                }
-            
+                    Image("Earth")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                    
+                    
+                    VStack(alignment: .leading) {
+                        Text("Texas Health")
+                            .font(.largeTitle)
+                            .foregroundColor(Color(red: 0,
+                                                   green:0 ,
+                                                   blue: 0.5))
+                            .bold()
+                        Text("Resource")
+                            .font(.title)
+                            .foregroundColor(Color(red: 0,
+                                                   green:0 ,
+                                                   blue: 0.5))
+                        
+                    }
                 
+                    
+                    
+                }.padding(.top)
                 
-            }.padding(.top)
-            
-            HStack{
-                Spacer()
-                Text("My")
-                    .font(.largeTitle)
-                    .foregroundColor(Color(red: 0, green: 0, blue: 0.5)
-)
-                    .bold()
-                Text("Chart")
-                    .font(.title)
-                    .foregroundColor(.green)
-            }.padding(.bottom)
-            UserNameAndPasswordView()
-          
+                HStack{
+                    Spacer()
+                    Text("My")
+                        .font(.largeTitle)
+                        .foregroundColor(Color(red: 0, green: 0, blue: 0.5)
+    )
+                        .bold()
+                    Text("Chart")
+                        .font(.title)
+                        .foregroundColor(.green)
+                }.padding(.bottom)
+                UserNameAndPasswordView()
+              
 
-        }.frame(width: UIScreen.main.bounds.size.width - 50
-                        ,height: UIScreen.main.bounds.size.height)
+            }.frame(width: UIScreen.main.bounds.size.width
+                            ,height: UIScreen.main.bounds.size.height)
+        
+
         
     
         
@@ -70,6 +72,8 @@ struct SignInView: View {
 struct UserNameAndPasswordView: View {
     @State private var stringOfTextField: String = String()
     @State private var isOn = false
+    @State private var isDetailActive = false
+
 
     var body: some View {
         VStack(){
@@ -116,30 +120,40 @@ struct UserNameAndPasswordView: View {
                  }
                  .background(Color.gray) // If you have this
                  .cornerRadius(10)
-                HStack(spacing : 120){
-                    VStack{
+                HStack(spacing: 120) {
+                    VStack {
                         Image(systemName: "questionmark.circle")
-                        Text("Need Help?")
-
+                        Text("Need Help")
                     }
-                    VStack{
+
+                    VStack {
                         Image(systemName: "person.badge.plus")
                         Text("Sign Up")
-
                     }
-                }.padding()
+                    .onTapGesture {
+                        isDetailActive = true
+                    }
+                    .background(
+                        NavigationLink("", destination: SignUpView(), isActive: $isDetailActive)
+                    )
+                }
+            }
+               
+                    
+                
+                
             }
             VStack(alignment:.trailing){
                InfoCell()
        
                 
-            }.frame(width: 450)
+            }.frame(width: 440)
                 
             }
         
         }
  
-    }
+
     
 
 
