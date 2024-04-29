@@ -7,18 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0A50902BCDCED600AC819C /* smu_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A508F2BCDCED600AC819C /* smu_ios_appApp.swift */; };
-		1D0A50922BCDCED600AC819C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50912BCDCED600AC819C /* ContentView.swift */; };
-		1D0A50942BCDCED800AC819C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A50932BCDCED800AC819C /* Assets.xcassets */; };
-		1D0A50972BCDCED800AC819C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A50962BCDCED800AC819C /* Preview Assets.xcassets */; };
+		1D0A50BA2BCDCF1100AC819C /* LoginTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50A92BCDCF1100AC819C /* LoginTestApp.swift */; };
+		1D0A50BB2BCDCF1100AC819C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50AA2BCDCF1100AC819C /* MainView.swift */; };
+		1D0A50BC2BCDCF1100AC819C /* EventInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50AC2BCDCF1100AC819C /* EventInfo.swift */; };
+		1D0A50BD2BCDCF1100AC819C /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50AD2BCDCF1100AC819C /* EventList.swift */; };
+		1D0A50BE2BCDCF1100AC819C /* EventForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50AE2BCDCF1100AC819C /* EventForm.swift */; };
+		1D0A50BF2BCDCF1100AC819C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50B02BCDCF1100AC819C /* SignInView.swift */; };
+		1D0A50C02BCDCF1100AC819C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50B12BCDCF1100AC819C /* SignUpView.swift */; };
+		1D0A50D82BCDCF2C00AC819C /* RegisterDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50C32BCDCF2C00AC819C /* RegisterDropDown.swift */; };
+		1D0A50D92BCDCF2C00AC819C /* PrimaryBtnStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50C62BCDCF2C00AC819C /* PrimaryBtnStyle.swift */; };
+		1D0A50DA2BCDCF2C00AC819C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50C72BCDCF2C00AC819C /* BackButton.swift */; };
+		1D0A50DD2BCDCF2C00AC819C /* CategoryCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50CB2BCDCF2C00AC819C /* CategoryCards.swift */; };
+		1D0A50DE2BCDCF2C00AC819C /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50CD2BCDCF2C00AC819C /* AuthTextField.swift */; };
+		1D0A50DF2BCDCF2C00AC819C /* DoctorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50CF2BCDCF2C00AC819C /* DoctorCell.swift */; };
+		1D0A50E02BCDCF2C00AC819C /* ErrorPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50D12BCDCF2C00AC819C /* ErrorPopUp.swift */; };
+		1D0A50E12BCDCF2C00AC819C /* LoadingPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50D22BCDCF2C00AC819C /* LoadingPopUp.swift */; };
+		1D0A50E22BCDCF2C00AC819C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50D32BCDCF2C00AC819C /* Toast.swift */; };
+		1D0A50E32BCDCF2C00AC819C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50D52BCDCF2C00AC819C /* Header.swift */; };
+		1D0A50E42BCDCF2C00AC819C /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50D72BCDCF2C00AC819C /* HomeHeader.swift */; };
+		1D0A50EC2BCDCF3900AC819C /* EmailChecker .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50EA2BCDCF3900AC819C /* EmailChecker .swift */; };
+		1D0A50ED2BCDCF3900AC819C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50EB2BCDCF3900AC819C /* Font.swift */; };
+		1D0A50F22BCDCF4000AC819C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50EF2BCDCF4000AC819C /* Endpoints.swift */; };
+		1D0A50F32BCDCF4000AC819C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50F02BCDCF4000AC819C /* NetworkService.swift */; };
+		1D0A50F42BCDCF4000AC819C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50F12BCDCF4000AC819C /* NetworkError.swift */; };
+		1D0A50F92BCDCF5B00AC819C /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50F72BCDCF5B00AC819C /* CoreDataViewModel.swift */; };
+		1D0A50FC2BCDCFF200AC819C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50FB2BCDCFF200AC819C /* Theme.swift */; };
+		1D0A50FE2BCDD02200AC819C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A50FD2BCDD02200AC819C /* Validator.swift */; };
+		1D0A51032BCDDB3B00AC819C /* Utilitis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51022BCDDB3B00AC819C /* Utilitis.swift */; };
+		1D0A51062BCDE1A700AC819C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51052BCDE1A700AC819C /* Constants.swift */; };
+		1D0A51082BCDE28100AC819C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51072BCDE28100AC819C /* CoreDataStack.swift */; };
+		1D0A510A2BCDE32600AC819C /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51092BCDE32600AC819C /* SignUpViewModel.swift */; };
+		1D0A510D2BCDE8AB00AC819C /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A510C2BCDE8AB00AC819C /* EventViewModel.swift */; };
+		1D0A51132BCDF04F00AC819C /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51122BCDF04F00AC819C /* EventModel.swift */; };
+		1D0A51152BCDF09500AC819C /* FamilyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A51142BCDF09500AC819C /* FamilyModel.swift */; };
+		1D1484702BD0675E00A8AA11 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14846F2BD0675E00A8AA11 /* DoctorModel.swift */; };
+		1D1484722BD074DC00A8AA11 /* TestDoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1484712BD074DC00A8AA11 /* TestDoctorModel.swift */; };
+		1D3EA34E2BD844C70034E96F /* SMU_DB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D1484732BD0809C00A8AA11 /* SMU_DB.xcdatamodeld */; };
+		1D41160A2BE0611400C31D05 /* FamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4116062BE0611400C31D05 /* FamilyView.swift */; };
+		1D41160C2BE0611400C31D05 /* FamilyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4116092BE0611400C31D05 /* FamilyViewModel.swift */; };
+		1D41160D2BE0611400C31D05 /* DoctorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F62BE0611400C31D05 /* DoctorList.swift */; };
+		1D41160E2BE0611400C31D05 /* DoctorInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F82BE0611400C31D05 /* DoctorInformation.swift */; };
+		1D4116112BE0611400C31D05 /* FamilyMemeberInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4116072BE0611400C31D05 /* FamilyMemeberInfo.swift */; };
+		1D4116122BE0611400C31D05 /* FamilyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4116082BE0611400C31D05 /* FamilyForm.swift */; };
+		1D4116132BE0611400C31D05 /* NursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115FB2BE0611400C31D05 /* NursesView.swift */; };
+		1D4116142BE0611400C31D05 /* DoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F92BE0611400C31D05 /* DoctorViewModel.swift */; };
+		1D4116152BE0611400C31D05 /* DoctorRegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F72BE0611400C31D05 /* DoctorRegisterForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D0A508C2BCDCED600AC819C /* smu_ios_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smu_ios_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D0A508F2BCDCED600AC819C /* smu_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smu_ios_appApp.swift; sourceTree = "<group>"; };
-		1D0A50912BCDCED600AC819C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1D0A50932BCDCED800AC819C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D0A50962BCDCED800AC819C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D0A509E2BCDCF1100AC819C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D0A50A92BCDCF1100AC819C /* LoginTestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTestApp.swift; sourceTree = "<group>"; };
+		1D0A50AA2BCDCF1100AC819C /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1D0A50AC2BCDCF1100AC819C /* EventInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
+		1D0A50AD2BCDCF1100AC819C /* EventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		1D0A50AE2BCDCF1100AC819C /* EventForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventForm.swift; sourceTree = "<group>"; };
+		1D0A50B02BCDCF1100AC819C /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1D0A50B12BCDCF1100AC819C /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1D0A50C32BCDCF2C00AC819C /* RegisterDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDropDown.swift; sourceTree = "<group>"; };
+		1D0A50C62BCDCF2C00AC819C /* PrimaryBtnStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryBtnStyle.swift; sourceTree = "<group>"; };
+		1D0A50C72BCDCF2C00AC819C /* BackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		1D0A50CB2BCDCF2C00AC819C /* CategoryCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCards.swift; sourceTree = "<group>"; };
+		1D0A50CD2BCDCF2C00AC819C /* AuthTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		1D0A50CF2BCDCF2C00AC819C /* DoctorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
+		1D0A50D12BCDCF2C00AC819C /* ErrorPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPopUp.swift; sourceTree = "<group>"; };
+		1D0A50D22BCDCF2C00AC819C /* LoadingPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingPopUp.swift; sourceTree = "<group>"; };
+		1D0A50D32BCDCF2C00AC819C /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		1D0A50D52BCDCF2C00AC819C /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		1D0A50D72BCDCF2C00AC819C /* HomeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		1D0A50EA2BCDCF3900AC819C /* EmailChecker .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmailChecker .swift"; sourceTree = "<group>"; };
+		1D0A50EB2BCDCF3900AC819C /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1D0A50EF2BCDCF4000AC819C /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		1D0A50F02BCDCF4000AC819C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1D0A50F12BCDCF4000AC819C /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1D0A50F72BCDCF5B00AC819C /* CoreDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
+		1D0A50FB2BCDCFF200AC819C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = "../../../Mobile App/Main/pr05r-medics-main_v2/pr05r-medics/Utility/Theme.swift"; sourceTree = "<group>"; };
+		1D0A50FD2BCDD02200AC819C /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = "../../../Mobile App/Main/pr05r-medics-main_v2/pr05r-medics/Utility/Validator.swift"; sourceTree = "<group>"; };
+		1D0A51022BCDDB3B00AC819C /* Utilitis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilitis.swift; sourceTree = "<group>"; };
+		1D0A51052BCDE1A700AC819C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1D0A51072BCDE28100AC819C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1D0A51092BCDE32600AC819C /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		1D0A510C2BCDE8AB00AC819C /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		1D0A51122BCDF04F00AC819C /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		1D0A51142BCDF09500AC819C /* FamilyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyModel.swift; sourceTree = "<group>"; };
+		1D14846F2BD0675E00A8AA11 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		1D1484712BD074DC00A8AA11 /* TestDoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDoctorModel.swift; sourceTree = "<group>"; };
+		1D1484742BD0809C00A8AA11 /* SMU_DB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SMU_DB.xcdatamodel; sourceTree = "<group>"; };
+		1D1484752BD0809C00A8AA11 /* SMU_DB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = SMU_DB.xcdatamodel; path = smu_ios_app/SMU_DB.xcdatamodeld/SMU_DB.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		1D4115F62BE0611400C31D05 /* DoctorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorList.swift; sourceTree = "<group>"; };
+		1D4115F72BE0611400C31D05 /* DoctorRegisterForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRegisterForm.swift; sourceTree = "<group>"; };
+		1D4115F82BE0611400C31D05 /* DoctorInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInformation.swift; sourceTree = "<group>"; };
+		1D4115F92BE0611400C31D05 /* DoctorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewModel.swift; sourceTree = "<group>"; };
+		1D4115FB2BE0611400C31D05 /* NursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NursesView.swift; sourceTree = "<group>"; };
+		1D4115FD2BE0611400C31D05 /* EventInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfo.swift; sourceTree = "<group>"; };
+		1D4115FE2BE0611400C31D05 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		1D4115FF2BE0611400C31D05 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		1D4116002BE0611400C31D05 /* EventForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventForm.swift; sourceTree = "<group>"; };
+		1D4116062BE0611400C31D05 /* FamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyView.swift; sourceTree = "<group>"; };
+		1D4116072BE0611400C31D05 /* FamilyMemeberInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemeberInfo.swift; sourceTree = "<group>"; };
+		1D4116082BE0611400C31D05 /* FamilyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyForm.swift; sourceTree = "<group>"; };
+		1D4116092BE0611400C31D05 /* FamilyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +140,15 @@
 		1D0A508E2BCDCED600AC819C /* smu_ios_app */ = {
 			isa = PBXGroup;
 			children = (
-				1D0A508F2BCDCED600AC819C /* smu_ios_appApp.swift */,
-				1D0A50912BCDCED600AC819C /* ContentView.swift */,
-				1D0A50932BCDCED800AC819C /* Assets.xcassets */,
+				1D0A510B2BCDE7C400AC819C /* Model */,
+				1D0A51042BCDE19400AC819C /* Constants */,
+				1D0A50FA2BCDCFCC00AC819C /* Utilitis */,
+				1D0A50F52BCDCF5B00AC819C /* ViewModels */,
+				1D0A50EE2BCDCF4000AC819C /* Networking */,
+				1D0A50E92BCDCF3900AC819C /* Extensions */,
+				1D0A50E52BCDCF3300AC819C /* DBManagr */,
+				1D0A50C12BCDCF2C00AC819C /* CustomComponent */,
+				1D0A509D2BCDCF1100AC819C /* Views */,
 				1D0A50952BCDCED800AC819C /* Preview Content */,
 			);
 			path = smu_ios_app;
@@ -65,6 +160,245 @@
 				1D0A50962BCDCED800AC819C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1D0A509D2BCDCF1100AC819C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D4115FA2BE0611400C31D05 /* NurseView */,
+				1D4116052BE0611400C31D05 /* Family */,
+				1D4115F52BE0611400C31D05 /* DoctorView */,
+				1D4115FC2BE0611400C31D05 /* Event */,
+				1D0A509E2BCDCF1100AC819C /* Assets.xcassets */,
+				1D0A50A92BCDCF1100AC819C /* LoginTestApp.swift */,
+				1D0A50AA2BCDCF1100AC819C /* MainView.swift */,
+				1D0A50AB2BCDCF1100AC819C /* Event */,
+				1D0A50AF2BCDCF1100AC819C /* Login */,
+			);
+			name = Views;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/Views";
+			sourceTree = "<group>";
+		};
+		1D0A50AB2BCDCF1100AC819C /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50AC2BCDCF1100AC819C /* EventInfo.swift */,
+				1D0A50AD2BCDCF1100AC819C /* EventList.swift */,
+				1D0A510C2BCDE8AB00AC819C /* EventViewModel.swift */,
+				1D0A50AE2BCDCF1100AC819C /* EventForm.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		1D0A50AF2BCDCF1100AC819C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50B02BCDCF1100AC819C /* SignInView.swift */,
+				1D0A50B12BCDCF1100AC819C /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1D0A50C12BCDCF2C00AC819C /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50C22BCDCF2C00AC819C /* DropDown */,
+				1D0A50C42BCDCF2C00AC819C /* Buttons */,
+				1D0A50C82BCDCF2C00AC819C /* Cards */,
+				1D0A50CC2BCDCF2C00AC819C /* TextField */,
+				1D0A50CE2BCDCF2C00AC819C /* DoctorCell */,
+				1D0A50D02BCDCF2C00AC819C /* Popups */,
+				1D0A50D42BCDCF2C00AC819C /* AuthHeader */,
+				1D0A50D62BCDCF2C00AC819C /* HomeHeader */,
+			);
+			name = CustomComponent;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/CustomComponent";
+			sourceTree = "<group>";
+		};
+		1D0A50C22BCDCF2C00AC819C /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50C32BCDCF2C00AC819C /* RegisterDropDown.swift */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		1D0A50C42BCDCF2C00AC819C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50C52BCDCF2C00AC819C /* ButtonStyles */,
+				1D0A50C72BCDCF2C00AC819C /* BackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1D0A50C52BCDCF2C00AC819C /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50C62BCDCF2C00AC819C /* PrimaryBtnStyle.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		1D0A50C82BCDCF2C00AC819C /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50CB2BCDCF2C00AC819C /* CategoryCards.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		1D0A50CC2BCDCF2C00AC819C /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50CD2BCDCF2C00AC819C /* AuthTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		1D0A50CE2BCDCF2C00AC819C /* DoctorCell */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50CF2BCDCF2C00AC819C /* DoctorCell.swift */,
+			);
+			path = DoctorCell;
+			sourceTree = "<group>";
+		};
+		1D0A50D02BCDCF2C00AC819C /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50D12BCDCF2C00AC819C /* ErrorPopUp.swift */,
+				1D0A50D22BCDCF2C00AC819C /* LoadingPopUp.swift */,
+				1D0A50D32BCDCF2C00AC819C /* Toast.swift */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		1D0A50D42BCDCF2C00AC819C /* AuthHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50D52BCDCF2C00AC819C /* Header.swift */,
+			);
+			path = AuthHeader;
+			sourceTree = "<group>";
+		};
+		1D0A50D62BCDCF2C00AC819C /* HomeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50D72BCDCF2C00AC819C /* HomeHeader.swift */,
+			);
+			path = HomeHeader;
+			sourceTree = "<group>";
+		};
+		1D0A50E52BCDCF3300AC819C /* DBManagr */ = {
+			isa = PBXGroup;
+			children = (
+				1D1484732BD0809C00A8AA11 /* SMU_DB.xcdatamodeld */,
+				1D0A51072BCDE28100AC819C /* CoreDataStack.swift */,
+			);
+			name = DBManagr;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/DBManagr";
+			sourceTree = "<group>";
+		};
+		1D0A50E92BCDCF3900AC819C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50EA2BCDCF3900AC819C /* EmailChecker .swift */,
+				1D0A50EB2BCDCF3900AC819C /* Font.swift */,
+			);
+			name = Extensions;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/Extensions";
+			sourceTree = "<group>";
+		};
+		1D0A50EE2BCDCF4000AC819C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50EF2BCDCF4000AC819C /* Endpoints.swift */,
+				1D0A50F02BCDCF4000AC819C /* NetworkService.swift */,
+				1D0A50F12BCDCF4000AC819C /* NetworkError.swift */,
+			);
+			name = Networking;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/Networking";
+			sourceTree = "<group>";
+		};
+		1D0A50F52BCDCF5B00AC819C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50F72BCDCF5B00AC819C /* CoreDataViewModel.swift */,
+				1D0A51092BCDE32600AC819C /* SignUpViewModel.swift */,
+			);
+			name = ViewModels;
+			path = "../../MedicalApp/SMU-Medical_app/MedicalApp/ViewModels";
+			sourceTree = "<group>";
+		};
+		1D0A50FA2BCDCFCC00AC819C /* Utilitis */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A50FD2BCDD02200AC819C /* Validator.swift */,
+				1D0A50FB2BCDCFF200AC819C /* Theme.swift */,
+				1D0A51022BCDDB3B00AC819C /* Utilitis.swift */,
+			);
+			path = Utilitis;
+			sourceTree = "<group>";
+		};
+		1D0A51042BCDE19400AC819C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A51052BCDE1A700AC819C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1D0A510B2BCDE7C400AC819C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D14846F2BD0675E00A8AA11 /* DoctorModel.swift */,
+				1D0A51122BCDF04F00AC819C /* EventModel.swift */,
+				1D0A51142BCDF09500AC819C /* FamilyModel.swift */,
+				1D1484712BD074DC00A8AA11 /* TestDoctorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D4115F52BE0611400C31D05 /* DoctorView */ = {
+			isa = PBXGroup;
+			children = (
+				1D4115F92BE0611400C31D05 /* DoctorViewModel.swift */,
+				1D4115F72BE0611400C31D05 /* DoctorRegisterForm.swift */,
+				1D4115F82BE0611400C31D05 /* DoctorInformation.swift */,
+				1D4115F62BE0611400C31D05 /* DoctorList.swift */,
+			);
+			path = DoctorView;
+			sourceTree = "<group>";
+		};
+		1D4115FA2BE0611400C31D05 /* NurseView */ = {
+			isa = PBXGroup;
+			children = (
+				1D4115FB2BE0611400C31D05 /* NursesView.swift */,
+			);
+			path = NurseView;
+			sourceTree = "<group>";
+		};
+		1D4115FC2BE0611400C31D05 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				1D4115FD2BE0611400C31D05 /* EventInfo.swift */,
+				1D4115FE2BE0611400C31D05 /* EventList.swift */,
+				1D4115FF2BE0611400C31D05 /* EventViewModel.swift */,
+				1D4116002BE0611400C31D05 /* EventForm.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		1D4116052BE0611400C31D05 /* Family */ = {
+			isa = PBXGroup;
+			children = (
+				1D4116092BE0611400C31D05 /* FamilyViewModel.swift */,
+				1D4116082BE0611400C31D05 /* FamilyForm.swift */,
+				1D4116062BE0611400C31D05 /* FamilyView.swift */,
+				1D4116072BE0611400C31D05 /* FamilyMemeberInfo.swift */,
+			);
+			path = Family;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +459,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0A50972BCDCED800AC819C /* Preview Assets.xcassets in Resources */,
-				1D0A50942BCDCED800AC819C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +469,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0A50922BCDCED600AC819C /* ContentView.swift in Sources */,
-				1D0A50902BCDCED600AC819C /* smu_ios_appApp.swift in Sources */,
+				1D3EA34E2BD844C70034E96F /* SMU_DB.xcdatamodeld in Sources */,
+				1D0A50F22BCDCF4000AC819C /* Endpoints.swift in Sources */,
+				1D0A50BC2BCDCF1100AC819C /* EventInfo.swift in Sources */,
+				1D0A50ED2BCDCF3900AC819C /* Font.swift in Sources */,
+				1D0A50DF2BCDCF2C00AC819C /* DoctorCell.swift in Sources */,
+				1D0A50BD2BCDCF1100AC819C /* EventList.swift in Sources */,
+				1D4116152BE0611400C31D05 /* DoctorRegisterForm.swift in Sources */,
+				1D0A50BB2BCDCF1100AC819C /* MainView.swift in Sources */,
+				1D0A50E42BCDCF2C00AC819C /* HomeHeader.swift in Sources */,
+				1D0A50FC2BCDCFF200AC819C /* Theme.swift in Sources */,
+				1D0A50F42BCDCF4000AC819C /* NetworkError.swift in Sources */,
+				1D4116132BE0611400C31D05 /* NursesView.swift in Sources */,
+				1D0A50FE2BCDD02200AC819C /* Validator.swift in Sources */,
+				1D0A50F32BCDCF4000AC819C /* NetworkService.swift in Sources */,
+				1D0A50BE2BCDCF1100AC819C /* EventForm.swift in Sources */,
+				1D0A51082BCDE28100AC819C /* CoreDataStack.swift in Sources */,
+				1D0A50E12BCDCF2C00AC819C /* LoadingPopUp.swift in Sources */,
+				1D0A51132BCDF04F00AC819C /* EventModel.swift in Sources */,
+				1D41160A2BE0611400C31D05 /* FamilyView.swift in Sources */,
+				1D0A50E02BCDCF2C00AC819C /* ErrorPopUp.swift in Sources */,
+				1D0A510D2BCDE8AB00AC819C /* EventViewModel.swift in Sources */,
+				1D0A50DA2BCDCF2C00AC819C /* BackButton.swift in Sources */,
+				1D0A51062BCDE1A700AC819C /* Constants.swift in Sources */,
+				1D41160C2BE0611400C31D05 /* FamilyViewModel.swift in Sources */,
+				1D0A50DE2BCDCF2C00AC819C /* AuthTextField.swift in Sources */,
+				1D0A50DD2BCDCF2C00AC819C /* CategoryCards.swift in Sources */,
+				1D0A50E32BCDCF2C00AC819C /* Header.swift in Sources */,
+				1D41160D2BE0611400C31D05 /* DoctorList.swift in Sources */,
+				1D0A50D92BCDCF2C00AC819C /* PrimaryBtnStyle.swift in Sources */,
+				1D0A51032BCDDB3B00AC819C /* Utilitis.swift in Sources */,
+				1D0A50EC2BCDCF3900AC819C /* EmailChecker .swift in Sources */,
+				1D0A51152BCDF09500AC819C /* FamilyModel.swift in Sources */,
+				1D4116142BE0611400C31D05 /* DoctorViewModel.swift in Sources */,
+				1D4116112BE0611400C31D05 /* FamilyMemeberInfo.swift in Sources */,
+				1D4116122BE0611400C31D05 /* FamilyForm.swift in Sources */,
+				1D0A50C02BCDCF1100AC819C /* SignUpView.swift in Sources */,
+				1D41160E2BE0611400C31D05 /* DoctorInformation.swift in Sources */,
+				1D1484702BD0675E00A8AA11 /* DoctorModel.swift in Sources */,
+				1D0A50F92BCDCF5B00AC819C /* CoreDataViewModel.swift in Sources */,
+				1D0A50BA2BCDCF1100AC819C /* LoginTestApp.swift in Sources */,
+				1D0A50E22BCDCF2C00AC819C /* Toast.swift in Sources */,
+				1D0A50D82BCDCF2C00AC819C /* RegisterDropDown.swift in Sources */,
+				1D0A510A2BCDE32600AC819C /* SignUpViewModel.swift in Sources */,
+				1D1484722BD074DC00A8AA11 /* TestDoctorModel.swift in Sources */,
+				1D0A50BF2BCDCF1100AC819C /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +719,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D1484732BD0809C00A8AA11 /* SMU_DB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D1484752BD0809C00A8AA11 /* SMU_DB.xcdatamodel */,
+				1D1484742BD0809C00A8AA11 /* SMU_DB.xcdatamodel */,
+			);
+			currentVersion = 1D1484742BD0809C00A8AA11 /* SMU_DB.xcdatamodel */;
+			path = SMU_DB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1D0A50842BCDCED600AC819C /* Project object */;
 }
