@@ -52,6 +52,7 @@
 		1D4116132BE0611400C31D05 /* NursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115FB2BE0611400C31D05 /* NursesView.swift */; };
 		1D4116142BE0611400C31D05 /* DoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F92BE0611400C31D05 /* DoctorViewModel.swift */; };
 		1D4116152BE0611400C31D05 /* DoctorRegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4115F72BE0611400C31D05 /* DoctorRegisterForm.swift */; };
+		1D676D462BE2E2010018A6AA /* DummyTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D676D452BE2E2010018A6AA /* DummyTestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		1D4116072BE0611400C31D05 /* FamilyMemeberInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemeberInfo.swift; sourceTree = "<group>"; };
 		1D4116082BE0611400C31D05 /* FamilyForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyForm.swift; sourceTree = "<group>"; };
 		1D4116092BE0611400C31D05 /* FamilyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyViewModel.swift; sourceTree = "<group>"; };
+		1D676D452BE2E2010018A6AA /* DummyTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +358,7 @@
 				1D0A51122BCDF04F00AC819C /* EventModel.swift */,
 				1D0A51142BCDF09500AC819C /* FamilyModel.swift */,
 				1D1484712BD074DC00A8AA11 /* TestDoctorModel.swift */,
+				1D676D452BE2E2010018A6AA /* DummyTestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				1D0A50FC2BCDCFF200AC819C /* Theme.swift in Sources */,
 				1D0A50F42BCDCF4000AC819C /* NetworkError.swift in Sources */,
 				1D4116132BE0611400C31D05 /* NursesView.swift in Sources */,
+				1D676D462BE2E2010018A6AA /* DummyTestModel.swift in Sources */,
 				1D0A50FE2BCDD02200AC819C /* Validator.swift in Sources */,
 				1D0A50F32BCDCF4000AC819C /* NetworkService.swift in Sources */,
 				1D0A50BE2BCDCF1100AC819C /* EventForm.swift in Sources */,
